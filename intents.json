@@ -1,0 +1,80 @@
+{
+  "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi", "Hello", "Good morning", "Good evening", "Hey there",
+                "Is anyone there?", "Hi there", "How are you"
+            ],
+            "responses": [
+                "Hello! Welcome to PayBank. How can I assist you today?",
+                "Hi there! I'm PayBank's virtual assistant. How may I help you?",
+                "Good day! How can I help you with your banking needs?"
+            ]
+        },
+        {
+            "tag": "balance_inquiry",
+            "patterns": [
+                "What's my balance?", "How much money do I have?",
+                "Can you check my balance", "Show me my account balance",
+                "Balance inquiry", "Account balance", "Check balance"
+            ],
+            "responses": [
+                "To check your balance, please provide your account number.",
+                "I can help you check your balance. Please verify your identity first.",
+                "For security reasons, please log in to check your balance."
+            ]
+        },
+        {
+            "tag": "transfer_money",
+            "patterns": [
+                "I want to transfer money", "How do I send money?",
+                "Make a transfer", "Transfer funds", "Wire money",
+                "Send money to another account"
+            ],
+            "responses": [
+                "I can help you with money transfers. Where would you like to send money?",
+                "For transfers, please specify if it's domestic or international.",
+                "Would you like to make a transfer within PayBank or to another bank?"
+            ]
+        },
+        {
+            "tag": "loan_inquiry",
+            "patterns": [
+                "I need a loan", "Loan information", "How can I get a loan?",
+                "What are the loan rates?", "Apply for a loan",
+                "Personal loan requirements"
+            ],
+            "responses": [
+                "PayBank offers various types of loans. Are you interested in personal, home, or business loans?",
+                "Our current loan rates start from 4.99% p.a. Would you like to know more?",
+                "To apply for a loan, you'll need salary certificate and Emirates ID. Shall I explain the full requirements?"
+            ]
+        },
+        {
+            "tag": "credit_card",
+            "patterns": [
+                "I want a credit card", "Credit card application",
+                "What credit cards do you offer?", "Credit card benefits",
+                "Apply for credit card"
+            ],
+            "responses": [
+                "We offer several credit cards with different benefits. What type of rewards interest you?",
+                "Our credit cards come with competitive rates and rewards. Would you like to know more?",
+                "To apply for a credit card, you'll need to meet minimum salary requirements. Shall I proceed?"
+            ]
+        },
+        {
+            "tag": "help",
+            "patterns": [
+                "Help", "I need help", "Can you help me?",
+                "What can you do?", "What services do you offer?"
+            ],
+            "responses": [
+                "I can help you with: \n1. Balance inquiries\n2. Money transfers\n3. Loan information\n4. Credit cards\n5. General banking services",
+                "How can I assist you today? I'm trained to handle most banking queries.",
+                "I'm here to help with your banking needs. What would you like to know?"
+            ]
+        }
+    ]
+}
