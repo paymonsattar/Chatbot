@@ -1,0 +1,12 @@
+# --- 📔 Python Specific ---
+__pycache__/
+
+# --- 📔 ML Model Files ---
+*.h5
+*.pkl
+
+# --- 📔 IDE Specific ---
+.vscode/
+*.swp
+*.swo
+.DS_Store
