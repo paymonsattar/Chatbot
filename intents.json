@@ -1,80 +1,164 @@
 {
-  "intents": [
-        {
-            "tag": "greeting",
-            "patterns": [
-                "Hi", "Hello", "Good morning", "Good evening", "Hey there",
-                "Is anyone there?", "Hi there", "How are you"
-            ],
-            "responses": [
-                "Hello! Welcome to PayBank. How can I assist you today?",
-                "Hi there! I'm PayBank's virtual assistant. How may I help you?",
-                "Good day! How can I help you with your banking needs?"
-            ]
-        },
-        {
-            "tag": "balance_inquiry",
-            "patterns": [
-                "What's my balance?", "How much money do I have?",
-                "Can you check my balance", "Show me my account balance",
-                "Balance inquiry", "Account balance", "Check balance"
-            ],
-            "responses": [
-                "To check your balance, please provide your account number.",
-                "I can help you check your balance. Please verify your identity first.",
-                "For security reasons, please log in to check your balance."
-            ]
-        },
-        {
-            "tag": "transfer_money",
-            "patterns": [
-                "I want to transfer money", "How do I send money?",
-                "Make a transfer", "Transfer funds", "Wire money",
-                "Send money to another account"
-            ],
-            "responses": [
-                "I can help you with money transfers. Where would you like to send money?",
-                "For transfers, please specify if it's domestic or international.",
-                "Would you like to make a transfer within PayBank or to another bank?"
-            ]
-        },
-        {
-            "tag": "loan_inquiry",
-            "patterns": [
-                "I need a loan", "Loan information", "How can I get a loan?",
-                "What are the loan rates?", "Apply for a loan",
-                "Personal loan requirements"
-            ],
-            "responses": [
-                "PayBank offers various types of loans. Are you interested in personal, home, or business loans?",
-                "Our current loan rates start from 4.99% p.a. Would you like to know more?",
-                "To apply for a loan, you'll need salary certificate and Emirates ID. Shall I explain the full requirements?"
-            ]
-        },
-        {
-            "tag": "credit_card",
-            "patterns": [
-                "I want a credit card", "Credit card application",
-                "What credit cards do you offer?", "Credit card benefits",
-                "Apply for credit card"
-            ],
-            "responses": [
-                "We offer several credit cards with different benefits. What type of rewards interest you?",
-                "Our credit cards come with competitive rates and rewards. Would you like to know more?",
-                "To apply for a credit card, you'll need to meet minimum salary requirements. Shall I proceed?"
-            ]
-        },
-        {
-            "tag": "help",
-            "patterns": [
-                "Help", "I need help", "Can you help me?",
-                "What can you do?", "What services do you offer?"
-            ],
-            "responses": [
-                "I can help you with: \n1. Balance inquiries\n2. Money transfers\n3. Loan information\n4. Credit cards\n5. General banking services",
-                "How can I assist you today? I'm trained to handle most banking queries.",
-                "I'm here to help with your banking needs. What would you like to know?"
-            ]
-        }
-    ]
-}
+    "intents": [
+          {
+              "tag": "greeting",
+              "patterns": [
+                  "Hi", "Hello", "Good morning", "Good evening", "Hey there",
+                  "Is anyone there?", "Hi there", "How are you"
+              ],
+              "responses": [
+                  "Hello! Welcome to PayBank. How can I assist you today?",
+                  "Hi there! I'm PayBank's virtual assistant. How may I help you?",
+                  "Good day! How can I help you with your banking needs?"
+              ]
+          },
+          {
+              "tag": "balance_enquiry",
+              "patterns": [
+                  "What's my balance?", "How much money do I have?",
+                  "Can you check my balance", "Show me my account balance",
+                  "Balance enquiry", "Account balance", "Check balance"
+              ],
+              "responses": [
+                  "To check your balance, please provide your account number.",
+                  "I can help you check your balance. Please verify your identity first.",
+                  "For security reasons, please log in to check your balance."
+              ]
+          },
+          {
+              "tag": "transfer_money",
+              "patterns": [
+                  "I want to transfer money", "How do I send money?",
+                  "Make a transfer", "Transfer funds", "Wire money",
+                  "Send money to another account"
+              ],
+              "responses": [
+                  "I can help you with money transfers. Where would you like to send money?",
+                  "For transfers, please specify if it's domestic or international.",
+                  "Would you like to make a transfer within PayBank or to another bank?"
+              ]
+          },
+          {
+              "tag": "loan_enquiry",
+              "patterns": [
+                  "I need a loan", "Loan information", "How can I get a loan?",
+                  "What are the loan rates?", "Apply for a loan",
+                  "Personal loan requirements"
+              ],
+              "responses": [
+                  "PayBank offers various types of loans. Are you interested in personal, home, or business loans?",
+                  "Our current loan rates start from 4.99% p.a. Would you like to know more?",
+                  "To apply for a loan, you'll need salary certificate and Emirates ID. Shall I explain the full requirements?"
+              ]
+          },
+          {
+              "tag": "credit_card",
+              "patterns": [
+                  "I want a credit card", "Credit card application",
+                  "What credit cards do you offer?", "Credit card benefits",
+                  "Apply for credit card"
+              ],
+              "responses": [
+                  "We offer several credit cards with different benefits. What type of rewards interest you?",
+                  "Our credit cards come with competitive rates and rewards. Would you like to know more?",
+                  "To apply for a credit card, you'll need to meet minimum salary requirements. Shall I proceed?"
+              ]
+          },
+          {
+              "tag": "help",
+              "patterns": [
+                  "Help", "I need help", "Can you help me?",
+                  "What can you do?", "What services do you offer?"
+              ],
+              "responses": [
+                  "I can help you with: \n1. Balance inquiries\n2. Money transfers\n3. Loan information\n4. Credit cards\n5. General banking services",
+                  "How can I assist you today? I'm trained to handle most banking queries.",
+                  "I'm here to help with your banking needs. What would you like to know?"
+              ]
+          },
+          {
+              "tag": "current_account",
+              "patterns": [
+                  "How do I open a current account?", "Current account requirements",
+                  "What's needed for a current account?", "Open a current account",
+                  "Current account benefits", "Current account features",
+                  "What's a current account?", "Can I open a current account?"
+              ],
+              "responses": [
+                  "Our current accounts come with a cheque book and debit card. Would you like to know about the features?",
+                  "To open a current account, you'll need proof of address and identity. Shall I detail the requirements?",
+                  "Current accounts require a minimum balance of £500. Would you like to proceed with an application?"
+              ]
+          },
+          {
+              "tag": "standing_order",
+              "patterns": [
+                  "Set up a standing order", "How do standing orders work?",
+                  "Create regular payment", "Monthly payment setup",
+                  "Standing order vs direct debit", "Cancel standing order",
+                  "Change standing order", "Standing order help"
+              ],
+              "responses": [
+                  "I can help you set up a standing order. You'll need the recipient's sort code and account number.",
+                  "Standing orders are regular payments you control. Would you like to set one up or modify an existing one?",
+                  "To create a standing order, please log into your online banking. Shall I guide you through the process?"
+              ]
+          },
+          {
+              "tag": "overdraft",
+              "patterns": [
+                  "Can I get an overdraft?", "Overdraft charges",
+                  "Increase overdraft limit", "Apply for overdraft",
+                  "How much overdraft can I get?", "Overdraft fees",
+                  "Arranged overdraft", "Unarranged overdraft rates"
+              ],
+              "responses": [
+                  "Our arranged overdraft rates start at 39.9% APR. Would you like to check your eligibility?",
+                  "To apply for an overdraft, we'll need to review your account history. Shall we proceed?",
+                  "I can help you understand our overdraft charges and how to apply. What would you like to know?"
+              ]
+          },
+          {
+              "tag": "savings_account",
+              "patterns": [
+                  "Best savings rates", "Open savings account",
+                  "ISA information", "Fixed rate bonds",
+                  "Easy access savings", "Compare savings accounts",
+                  "Savings account interest", "Cash ISA transfer"
+              ],
+              "responses": [
+                  "We offer several savings options, including ISAs and fixed-rate bonds. What type interests you?",
+                  "Our easy access savings account currently offers 3.5% AER. Would you like more details?",
+                  "You can open a savings account with as little as £1. Shall I show you our available options?"
+              ]
+          },
+          {
+              "tag": "foreign_currency",
+              "patterns": [
+                  "Exchange rates today", "Currency exchange",
+                  "Foreign currency order", "Travel money",
+                  "Best exchange rates", "Order euros",
+                  "Currency conversion", "Foreign cash collection"
+              ],
+              "responses": [
+                  "We offer competitive exchange rates for over 50 currencies. Which currency would you like to exchange?",
+                  "You can order foreign currency online for collection at your local branch. Would you like to proceed?",
+                  "Our travel money service offers 0% commission. Shall I show you today's exchange rates?"
+              ]
+          },
+          {
+              "tag": "mobile_banking",
+              "patterns": [
+                  "Reset mobile banking", "Mobile app help",
+                  "Can't log into app", "Update banking app",
+                  "Mobile banking setup", "App features",
+                  "Banking app not working", "Secure key issues"
+              ],
+              "responses": [
+                  "Our mobile banking app lets you manage your accounts 24/7. Would you like help setting it up?",
+                  "If you're having trouble with the app, I can guide you through common solutions. What's the issue?",
+                  "To reset your mobile banking access, we'll need to verify your identity. Shall we proceed?"
+              ]
+          }
+      ]
+  }
