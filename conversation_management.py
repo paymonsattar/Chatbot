@@ -12,7 +12,7 @@ class ConversationState:
         #   - Tracks the entire state of a conversation session
         #   - Each attribute serves a specific purpose:
         
-        # Current intent being processed (e.g., "transfer_money", "balance_inquiry")
+        # Current intent being processed (e.g., "transfer_money", "balance_enquiry")
         self.current_intent: Optional[str] = None
         
         # Dictionary storing extracted information (e.g., amount, recipient)
@@ -68,8 +68,8 @@ class ConversationManager:
         #   - Specifies follow-up questions for missing information
         #   - Contains confirmation messages and success/failure responses
         self.follow_up_mapping = {
-            # Balance Inquiry Flow
-            'balance_inquiry': {
+            # Balance Enquiry Flow
+            'balance_enquiry': {
                 'required_entities': ['account_number'],
                 'follow_up_questions': {
                     'missing_account': "What's your account number?",
@@ -86,8 +86,8 @@ class ConversationManager:
                     'transfer_cancelled': "Transfer has been cancelled. Is there anything else I can help you with?"
                 }
             },
-            # Loan Inquiry Flow
-            'loan_inquiry': {
+            # Loan Enquiry Flow
+            'loan_enquiry': {
                 'required_entities': ['loan_type', 'amount'],
                 'follow_up_questions': {
                     'missing_loan_type': "What type of loan are you interested in? (personal, home, or business)",
@@ -208,8 +208,8 @@ class ConversationManager:
                     entities['recipient'] = ' '.join(words[i+1:])
                     break
                     
-        elif intent == 'balance_inquiry':
-            # 🧠 Balance Inquiry Entity Extraction:
+        elif intent == 'balance_enquiry':
+            # 🧠 Balance Enquiry Entity Extraction:
             #   - Looks for account numbers
             #   - Expects 10-12 digit number
             account_pattern = r'\b\d{10,12}\b'
